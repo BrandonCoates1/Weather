@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  font-family: "Poppins";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a:visited {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a:link {
+  text-decoration: none;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  background-color: black;
+}
+
+.header {
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  font-size: 3em;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 54vh;
+  width: 54vw;
+  background-color: rgb(179, 152, 120);
+  align-items: center;
+  padding: 6vh;
+}
+
+.searchBar {
+  height: fit-content;
+  font-size: 1em;
+}
+
+.submitButton {
+  height: fit-content;
+  width: fit-content;
+  font-size: 1em;
+  margin-left: 0.5vw;
+}
+
+.placeHeader {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-size: 3em;
+}
+
+.text {
+  width: 20vw;
+  background-color: rgba(209, 209, 209, 0.705);
+  font-size: 1.5em;
 }
